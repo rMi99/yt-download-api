@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "index.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/download/(.*)",
+      "dest": "/index.js"
+    }
+  ],
+  "env": {
+    "SITE_URL": "https://yt-download-api-git-main-ramisha-gimhanas-projects.vercel.app"
+  }
+}
